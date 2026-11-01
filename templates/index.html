@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171719">
+  <meta name="description" content="GrayxellaPortfolio — a personal space for creativity, learning, and little moments.">
+  <title>GrayxellaPortfolio | Grace Ellah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="GrayxellaPortfolio home"><span class="brand-mark">G.</span><span>grayxella<span class="brand-light">portfolio</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav id="mainNav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#photos">Photos</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE INTRODUCTION</p>
+          <h1>Hi, I'm <em>Grace Ellah.</em></span></h1>
+            <h2>
+                Computer Science Student |
+                <span> Web Developer</span> |
+                Data Entry Support
+            </h2>
+          <p class="hero-description">I am passionate about technology, data management, and creating useful digital solutions. I enjoy learning new skills, solving problems, and turning ideas into practical projects. I am responsible, detail-oriented, and eager to gain experience while continuing to grow.</p>
+          <div class="hero-actions">
+    <a class="button button-primary" href="#about">
+        Get to know me <span>↘</span>
+    </a>
+
+    <a class="text-link" href="#album">
+        Explore my photos <span>↗</span>
+    </a>
+
+    <a class="button button-resume"
+       href="{{ url_for('static', filename='files/Resume.ALMOROTO.pdf') }}"
+       download="Grace_Ellah_Almoroto_Resume.pdf">
+        Download My Resume <span>↓</span>
+    </a>
+</div>
+          <div class="hero-note"><span class="note-star">✳</span><span>Curious mind. Creative heart.<br>Always learning something new.</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="photo-frame"><img src="{{ url_for('static', filename='images/picture.png') }}" alt="Grace Ellah's profile portrait"></div>
+          <div class="photo-label"><span>01 / THE PROFILE</span><span>Nice to meet you ♡</span></div>
+          <div class="floating-stamp">MADE WITH<br><b>♡</b><br>INTENTION</div>
+        </div>
+        <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 04</span></div>
+      </section>
+
+<!-- ABOUT ME SECTION -->
+<section class="about section-pad" id="about">
+
+    <div class="section-kicker">01 / ABOUT ME</div>
+
+    <div class="about-grid">
+
+        <div class="about-heading">
+            <h2>
+                Learning as I go,<br>
+                <em>growing as I learn.</em>
+            </h2>
+        </div>
+
+        <div class="about-text">
+
+            <p class="lead">
+                I am currently pursuing a Bachelor of Science in
+                Computer Science at Western Mindanao State University,
+                Ipil External Campus. I have also completed an
+                Associate in Computer Technology.
+            </p>
+
+            <p>
+                Through my academic activities and practicum experience,
+                I have developed an interest in web development,
+                data management, and office support tasks. I have
+                experience organizing documents and records, checking
+                information for completeness, and reporting issues
+                that need attention.
+            </p>
+
+            <p>
+                I consider myself responsible, patient, and willing
+                to learn. I am looking forward to gaining practical
+                experience and contributing to a team while continuing
+                to improve my skills.
+            </p>
+
+            <div class="currently">
+                <span class="status-dot"></span>
+                <span>Currently learning: Web Development & Python</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="values-row">
+
+        <div>
+            <span>01</span>
+            <b>STAY CURIOUS</b>
+            <small>Keep learning and exploring.</small>
+        </div>
+
+        <div>
+            <span>02</span>
+            <b>BE RESPONSIBLE</b>
+            <small>Give attention to every detail.</small>
+        </div>
+
+        <div>
+            <span>03</span>
+            <b>KEEP GROWING</b>
+            <small>Improve through practice.</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS & TOOLS SECTION -->
+<section class="skills section-pad" id="skills">
+
+    <div class="section-kicker">02 / WHAT I CAN OFFER</div>
+
+    <div class="skills-heading">
+        <div>
+            <h2>Skills <em>& Tools</em></h2>
+        </div>
+
+        <p>
+            The knowledge and skills I'm developing through
+            my studies, projects, and continuous learning.
+        </p>
+    </div>
+
+    <div class="skills-grid">
+
+        <!-- Skill 1 -->
+        <div class="skill-card">
+            <div class="skill-icon">📁</div>
+            <span class="skill-number">01</span>
+            <h3>Administrative Support</h3>
+            <p>
+                Document organization, data encoding,
+                record checking, and attention to detail.
+            </p>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card">
+            <div class="skill-icon">📊</div>
+            <span class="skill-number">02</span>
+            <h3>Productivity Tools</h3>
+            <p>
+                Microsoft Word, Excel, and PowerPoint
+                for documents, spreadsheets, and presentations.
+            </p>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card">
+            <div class="skill-icon">🗄️</div>
+            <span class="skill-number">03</span>
+            <h3>Database & Technology</h3>
+            <p>
+                Academic experience with database concepts,
+                SQL, and data management.
+            </p>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <span class="skill-number">04</span>
+            <h3>Web Development</h3>
+            <p>
+                Learning website development and building
+                practical projects through coursework.
+            </p>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card">
+            <div class="skill-icon">💬</div>
+            <span class="skill-number">05</span>
+            <h3>Communication</h3>
+            <p>
+                Willingness to listen, ask questions,
+                follow instructions, and work with others.
+            </p>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card">
+            <div class="skill-icon">🌱</div>
+            <span class="skill-number">06</span>
+            <h3>Continuous Learning</h3>
+            <p>
+                Motivated to learn new tools, accept feedback,
+                and improve through practice.
+            </p>
+        </div>
+
+    </div>
+
+    <p class="skills-note">
+        ✳ Skill levels are intentionally not rated here.
+        I believe in continuous learning and improving through practice.
+    </p>
+
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="projects section-pad" id="projects">
+
+    <div class="section-kicker">03 / ACADEMIC WORK</div>
+
+    <div class="projects-heading">
+        <div>
+            <h2>Things I've<br><em>worked on.</em></h2>
+        </div>
+
+        <p>
+            A collection of my academic projects, programming
+            exercises, and ideas that I'm exploring as a
+            Computer Science student.
+        </p>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+            <div class="project-top">
+                <span class="project-number">01</span>
+                <span class="project-type">ACADEMIC PROJECT</span>
+            </div>
+
+            <div class="project-icon">🎓</div>
+
+            <h3>Student Academic Support Recommender (SASR)</h3>
+
+            <p>
+                A Python desktop application built with Tkinter.
+                It calculates a weighted course grade, considers
+                academic indicators, and provides explainable,
+                rule-based support suggestions.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Tkinter</span>
+                <span>Rule-based System</span>
+            </div>
+
+            <div class="project-footer">
+                <span>Academic project</span>
+            </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+            <div class="project-top">
+                <span class="project-number">02</span>
+                <span class="project-type">CONCEPT / IN PLANNING</span>
+            </div>
+
+            <div class="project-icon">🤖</div>
+
+            <h3>ComplaintAI – Concept</h3>
+
+            <p>
+                A proposed mobile application concept for
+                classifying barangay complaints using
+                machine learning and natural language processing.
+            </p>
+
+            <div class="project-tags">
+                <span>Machine Learning</span>
+                <span>NLP</span>
+                <span>Application Concept</span>
+            </div>
+
+            <div class="project-footer">
+                <span>Proposed project / In planning</span>
+            </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+            <div class="project-top">
+                <span class="project-number">03</span>
+                <span class="project-type">COURSEWORK</span>
+            </div>
+
+            <div class="project-icon">🗄️</div>
+
+            <h3>Database & SQL Coursework</h3>
+
+            <p>
+                Academic exercises involving database design,
+                SQL queries, and PostgreSQL query optimization
+                concepts.
+            </p>
+
+            <div class="project-tags">
+                <span>SQL</span>
+                <span>PostgreSQL</span>
+                <span>Database Concepts</span>
+            </div>
+
+            <div class="project-footer">
+                <span>Coursework</span>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="projects-note">
+        ✳ These entries represent academic work and a proposed
+        concept, not paid client projects. Screenshots, GitHub
+        links, and demos can be added when available.
+    </p>
+
+</section>
+
+
+
+
+<!-- PHOTO GALLERY SECTION -->
+<section class="photos section-pad" id="photos">
+
+    <div class="section-kicker">04 / A FEW PHOTOS</div>
+
+    <div class="photos-heading">
+        <div>
+            <h2>More About <em>Me.</em></h2>
+        </div>
+
+        <p>
+            A small photo gallery for my personal portfolio.
+            A few memories and moments I'd love to share.
+        </p>
+    </div>
+
+    <div class="photos-grid">
+
+        <!-- PHOTO 1 -->
+        <figure class="photo-card photo-large">
+            <button class="photo-view"
+                data-image="{{ url_for('static', filename='images/sunset-field.png') }}"
+                aria-label="View portrait photo">
+
+                <img
+                    src="{{ url_for('static', filename='images/sunset-field.png') }}"
+                    alt="Portrait photo of Grace Ellah">
+
+                <span class="photo-overlay">VIEW PHOTO ↗</span>
+            </button>
+
+            <figcaption>
+                <span>01</span>
+                <h3>Relaxing</h3>
+            </figcaption>
+        </figure>
+
+        <!-- PHOTO 2 -->
+        <figure class="photo-card">
+            <button class="photo-view"
+                data-image="{{ url_for('static', filename='images/cafe-portrait.png') }}"
+                aria-label="View casual photo">
+
+                <img
+                    src="{{ url_for('static', filename='images/cafe-portrait.png') }}"
+                    alt="Casual photo of Grace Ellah">
+
+                <span class="photo-overlay">VIEW PHOTO ↗</span>
+            </button>
+
+            <figcaption>
+                <span>02</span>
+                <h3>Casual Photo</h3>
+            </figcaption>
+        </figure>
+
+        <!-- PHOTO 3 -->
+        <figure class="photo-card">
+            <button class="photo-view"
+                data-image="{{ url_for('static', filename='images/hillside.png') }}"
+                aria-label="View professional profile photo">
+
+                <img
+                    src="{{ url_for('static', filename='images/hillside.png') }}"
+                    alt="Professional profile photo of Grace Ellah">
+
+                <span class="photo-overlay">VIEW PHOTO ↗</span>
+            </button>
+
+            <figcaption>
+                <span>03</span>
+                <h3>Hillside</h3>
+            </figcaption>
+        </figure>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION SECTION -->
+<section class="education section-pad" id="education">
+
+    <div class="section-kicker">05 / MY BACKGROUND</div>
+
+    <div class="education-heading">
+        <div>
+            <h2>My <em>Education.</em></h2>
+        </div>
+
+        <p>
+            My academic journey, the knowledge I've gained,
+            and the foundation I'm building for my future.
+        </p>
+    </div>
+
+    <div class="education-timeline">
+
+        <!-- EDUCATION 1 -->
+        <div class="education-item">
+            <div class="education-marker">
+                <span></span>
+            </div>
+
+            <div class="education-content">
+                <div class="education-top">
+                    <span class="education-number">01</span>
+                    <span class="education-status ongoing">
+                        CURRENTLY PURSUING
+                    </span>
+                </div>
+
+                <h3>Bachelor of Science in Computer Science</h3>
+
+                <p class="school-name">
+                    Western Mindanao State University – Ipil External Campus
+                </p>
+
+                <p class="education-description">
+                    Developing knowledge and practical skills in
+                    programming, software development, databases,
+                    and computer technologies.
+                </p>
+            </div>
+        </div>
+
+        <!-- EDUCATION 2 -->
+        <div class="education-item">
+            <div class="education-marker">
+                <span></span>
+            </div>
+
+            <div class="education-content">
+                <div class="education-top">
+                    <span class="education-number">02</span>
+                    <span class="education-status completed">
+                        COMPLETED
+                    </span>
+                </div>
+
+                <h3>Associate in Computer Technology</h3>
+
+                <p class="school-name">
+                    Western Mindanao State University – Ipil External Campus
+                </p>
+
+                <p class="education-description">
+                    Gained foundational knowledge in computer
+                    technology, information systems, and
+                    computer-related academic activities.
+                </p>
+            </div>
+        </div>
+
+        <!-- EDUCATION 3 -->
+        <div class="education-item">
+            <div class="education-marker">
+                <span></span>
+            </div>
+
+            <div class="education-content">
+                <div class="education-top">
+                    <span class="education-number">03</span>
+                    <span class="education-status completed">
+                        COMPLETED
+                    </span>
+                </div>
+
+                <h3>Vocational Diploma in Agri-Fishery Arts</h3>
+
+                <p class="school-name">
+                    Olutanga National High School
+                </p>
+
+                <p class="education-description">
+                    Focus: Animal Production. Developed
+                    foundational knowledge and practical
+                    experience in agricultural and fishery-related studies.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="education-note">
+        <span>✳</span>
+        Every learning experience is part of the journey.
+    </div>
+
+</section>
+        <!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+    <div class="section-heading">
+        <span class="section-label">LET'S CONNECT</span>
+        <h2>Contact Me</h2>
+        <p>
+            I am interested in entry-level opportunities where I can
+            contribute, learn, and grow. Feel free to contact me about
+            suitable projects or roles.
+        </p>
+    </div>
+
+    <div class="contact-links">
+        <a href="mailto:graceellaha@gmail.com" class="contact-button">
+            Email Me
+        </a>
+
+        <a href="https://www.linkedin.com/in/grace-ellah-almoroto-168b40446/"
+           target="_blank" rel="noopener noreferrer">
+            LinkedIn
+        </a>
+
+        <a href="https://github.com/Grayxella/sb"
+           target="_blank" rel="noopener noreferrer">
+            GitHub
+        </a>
+        <a href="https://www.instagram.com/gray_elah"
+       target="_blank" rel="noopener noreferrer">
+        Instagram
+    </a>
+    </div>
+
+    <div class="contact-email">
+        <span>Email:</span>
+        <a href="mailto:graceellaha@gmail.com">
+            graceellaha@gmail.com
+        </a>
+    </div>
+</section>
+
+    </main>
+
+   <footer class="footer">
+    <p>© <span id="year"></span> Grace Ellah L. Almoroto</p>
+
+    <a href="#home" class="back-to-top">
+        Back to top ↑
+    </a>
+</footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" src="" alt="Expanded album photo"></div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
